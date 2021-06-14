@@ -4,12 +4,19 @@ mod tests {
     fn it_works() {
         assert_eq!(2 + 2, 4);
     }
+
+    use crate::dcim;
+
+    #[test]
+    fn test_module() {
+        assert_eq!("get some devices", dcim::devices::get());
+    }
 }
 
-mod dcim {
-    mod devices {
-        fn get() {
-            println!("get some devices");
+pub mod dcim {
+    pub mod devices {
+        pub fn get() -> &'static str {
+            "get some devices"
         }
     }
 }
