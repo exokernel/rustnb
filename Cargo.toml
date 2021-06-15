@@ -1,6 +1,6 @@
 [package]
 name = "rustnb"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["Dustin Cannon <dustin.cannon@gmail.com>"]
 license = "MIT"
 edition = "2018"

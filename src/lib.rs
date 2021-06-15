@@ -13,6 +13,8 @@ mod tests {
     }
 }
 
+pub use crate::dcim::devices;
+
 mod dcim {
     pub mod devices {
         pub fn get() -> &'static str {
