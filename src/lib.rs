@@ -13,10 +13,21 @@ mod tests {
     }
 }
 
-pub mod dcim {
+mod dcim {
     pub mod devices {
         pub fn get() -> &'static str {
             "get some devices"
+        }
+
+        pub fn create() {
+            // create a device
+        }
+    }
+}
+
+mod virtualization {
+    pub mod virtual_machines {
+        pub fn get() {
         }
     }
 }
