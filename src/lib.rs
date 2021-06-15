@@ -15,7 +15,7 @@ mod tests {
 
 pub use crate::dcim::devices;
 
-mod dcim {
+pub mod dcim {
     pub mod devices {
         pub fn get() -> &'static str {
             "get some devices"
@@ -27,7 +27,7 @@ mod dcim {
     }
 }
 
-mod virtualization {
+pub mod virtualization {
     pub mod virtual_machines {
         pub fn get() {
         }
