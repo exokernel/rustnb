@@ -13,6 +13,16 @@ mod tests {
     }
 }
 
+// (api -> app -> endpoint) -> (record -> dcim)
+//         dcim   devices.get() -> obj.save()
+//
+// let nb = rustnb::api::new(nburl)
+// let nbrequest = rustnb::Request {name: "birdperson"}
+// let params = HashMap::<String, _>::from_iter(IntoIter::new([("name", "birdperson.fciis.net"), ("foo", "bar")]));
+// let nbdevice = nb.dcim.devices.get(params)
+// nbdevice.type = "Server 1U"
+// nbdevice.save()
+
 pub use crate::dcim::devices;
 
 pub mod dcim {
