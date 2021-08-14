@@ -16,12 +16,13 @@ mod tests {
 // (api -> app -> endpoint) -> (record -> dcim)
 //         dcim   devices.get() -> obj.save()
 //
-// let nb = rustnb::api::new(nburl)
-// let nbrequest = rustnb::Request {name: "birdperson"}
-// let params = HashMap::<String, _>::from_iter(IntoIter::new([("name", "birdperson.fciis.net"), ("foo", "bar")]));
-// let nbdevice = nb.dcim.devices.get(params)
-// nbdevice.type = "Server 1U"
-// nbdevice.save()
+// use serde_json::value::Value
+// let nb = rustnb::api::new(nburl, token);
+// let nbrequest = rustnb::Request {name: "birdperson"};
+// let params = json!({ "name": "birdperson.fciis.net" });;
+// let nbdevice = nb.dcim.devices.get(params);
+// nbdevice.type = "Server 1U";
+// nbdevice.save();
 
 pub use crate::dcim::devices;
 
